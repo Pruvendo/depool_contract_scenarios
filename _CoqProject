@@ -1,0 +1,113 @@
+# Initial version generated with
+# { echo "-R . FinProof " ; find . -name "*.v" -print } > _CoqProject
+
+-Q src depoolContract
+
+-R modules/coq-finproof-base FinProof
+
+#general files with contracts definitions ans proof environment
+#src/SolidityNotations.v
+src/ProofEnvironment.v
+src/DePoolClass.v
+
+#library more or less general for all contract functions
+src/Lib/CPDT.v
+src/Lib/Tactics.v
+src/Lib/CommonModelProofs.v
+src/Lib/ErrorValueProofs.v
+src/Lib/CommonCommon.v
+src/Lib/UniqueArrays.v
+src/Lib/UniqueArrays2.v
+src/Lib/CommonStateProofs.v
+
+#files of functions
+src/DePoolSpec.v
+src/DePoolFunc.v
+
+#specifications for individual functions
+#src/Specifications/
+#src/Specifications/
+#src/Specifications/
+
+
+
+#proofs of smaller contracts
+#src/Proofs/DePoolContract_addVestingOrLock.v
+#src/Proofs/DePoolContract_acceptRewardAndStartRoundCompleting.v
+
+#src/Proofs/DePoolProxyContractProof.v
+#src/Proofs/ConfigParamsBaseProof.v
+#src/Proofs/ValidatorBaseProof.v
+#src/Proofs/ProxyBaseProof.v
+#src/Proofs/ParticipantProof.v
+#src/Proofs/DePoolProxyContractProof.v
+
+src/Scenarios/Common/CommonDefinitions.v
+src/Scenarios/Common/RotateRoundsCondition.v
+src/Scenarios/Common/CommonDefinitionsProofs.v
+src/Scenarios/Common/cutWithdrawalValueMove.v
+src/Scenarios/Common/cutWithdrawalValueProofs.v
+src/Scenarios/Common/_returnOrReinvestForParticipantMove.v
+src/Scenarios/Common/_returnOrReinvestForParticipant_attachedValueMove.v
+src/Scenarios/Common/_returnOrReinvestForParticipant_attachedValueProofs.v
+src/Scenarios/Common/_returnOrReinvestForParticipantProofs.v
+src/Scenarios/Common/_returnOrReinvestMove.v
+src/Scenarios/Common/_returnOrReinvestProofs.v
+src/Scenarios/Common/RoundDefinitions.v
+src/Scenarios/Common/RewardsMove.v
+src/Scenarios/Common/RewardsProofs.v
+src/Scenarios/Common/Axioms.v
+src/Scenarios/Common/UtilProofs.v
+src/Scenarios/Common/unfreezeCondition.v
+src/Scenarios/Common/unfreezeProofs.v
+src/Scenarios/Correctness/InvestParamsCorrect.v
+src/Scenarios/Correctness/ParticipantCorrect.v
+src/Scenarios/Correctness/RoundCorrect.v
+src/Scenarios/Correctness/RoundCorrectProofs.v
+src/Scenarios/Correctness/StakeValueCorrect.v
+src/Scenarios/Correctness/StakeValueCorrectProofs.v
+src/Scenarios/Correctness/LedgerCorrect.v
+src/Scenarios/Correctness/LedgerCorrectGlobal.v
+src/Scenarios/Projections/Pool/States.v
+src/Scenarios/Projections/Pool/Conditions.v
+src/Scenarios/Projections/Round_CompletionReason/States.v
+src/Scenarios/Projections/Round_CompletionReason/Conditions.v
+src/Scenarios/Projections/Round_Pool/States.v
+src/Scenarios/Projections/Round_Pool/Conditions.v
+src/Scenarios/Projections/Round_Stakes/States.v
+src/Scenarios/Projections/Round_Stakes/Conditions.v
+src/Scenarios/Projections/Round_Steps/States.v
+src/Scenarios/Projections/Round_Steps/Conditions.v
+src/Scenarios/Projections/Round_stakes_list/States.v
+src/Scenarios/Projections/Round_stakes_list/Conditions.v
+#src/Proofs/RoundsBaseProof.v
+#src/Proofs/ParticipantBaseProof.v
+
+
+
+#individual functions of main DePool contract
+#done: 
+
+#src/Proofs/DePoolContract_addLockStake.v
+#src/Proofs/DePoolContract_addOrdinaryStake.v
+
+#src/Proofs/DePoolContract_cancelWithdrawal.v
+# src/Proofs/DePoolContract_completeRound.v
+#src/Proofs/DePoolContract_completeRoundWithChunk.v
+#src/Proofs/DePoolContract_constructor6.v
+#src/Proofs/DePoolContract_generateRound.v
+#src/Proofs/DePoolContract_onBounce.v
+#src/Proofs/DePoolContract_onFailToRecoverStake.v
+#src/Proofs/DePoolContract_onStakeAccept.v
+#src/Proofs/DePoolContract_onStakeReject.v
+#src/Proofs/DePoolContract_onSuccessToRecoverStake.v
+#src/Proofs/DePoolContract_participateInElections.v
+#src/Proofs/DePoolContract_startRoundCompleting.v
+#src/Proofs/DePoolContract_terminator.v
+#src/Proofs/DePoolContract_ticktock.v
+# src/Proofs/DePoolContract_updateRound2.v
+# src/Proofs/DePoolContract_updateRounds.v
+#src/Proofs/DePoolContract_withdrawAll.v
+#src/Proofs/DePoolContract_withdrawFromPoolingRound.v
+#src/Proofs/DePoolContract_withdrawPart.v
+
